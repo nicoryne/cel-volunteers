@@ -333,7 +333,7 @@ export default function Home() {
                       : 'No volunteers scheduled for today'}
                   </div>
                 ) : (
-                  <div className="space-y-6">
+                  <div className="h-[60vh] space-y-6 overflow-y-auto">
                     {Object.entries(filteredVolunteers).map(([dept, volunteers]) => (
                       <div key={dept}>
                         <div className="mb-2 flex items-center justify-between">
